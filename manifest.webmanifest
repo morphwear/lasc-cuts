@@ -1,0 +1,23 @@
+{
+ "name": "LASC Season Cuts Tracker",
+ "short_name": "LASC Cuts",
+ "start_url": "2026-27_athlete_tables.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#013260",
+ "theme_color": "#013260",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
