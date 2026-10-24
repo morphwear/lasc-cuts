@@ -1,5 +1,5 @@
 // Offline copy of the sealed pages: network first (so a new meet shows up), the saved copy when offline or slow.
-const V = 'cuts-c83a76de36fe', FILES = ["./", "2026-10-03_pvst-funky-five-pentathlon_new_standards.html", "2026-10-10_paseo-fall-kickoff-season-opener_new_standards.html", "2026-27_athlete_tables.html", "icon-180.png", "icon-192.png", "icon-512.png", "index.html", "manifest.webmanifest"];
+const V = 'cuts-606c088b4c2d', FILES = ["./", "2026-10-03_pvst-funky-five-pentathlon_new_standards.html", "2026-10-10_paseo-fall-kickoff-season-opener_new_standards.html", "2026-27_athlete_tables.html", "icon-180.png", "icon-192.png", "icon-512.png", "index.html", "manifest.webmanifest"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(V).then(c => c.addAll(FILES))); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys()
   .then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())));
